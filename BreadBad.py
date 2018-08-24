@@ -67,17 +67,17 @@ class geoip:
 					i = None
 			
 			print "\n"
-			print "\tCountry(%s) \t\t:: %s" % (str(countryCode),str(country))
-			print "\tCity \t\t\t:: %s" % (str(city))
-			print "\tISP \t\t\t:: %s" % (str(isp))
-			print "\tOrganization \t\t:: %s" % (str(org))
+			print "\tCountry(%s) \t\t:: %s" % (str(countryCode.encode("utf-8")),str(country.encode("utf-8")))
+			print "\tCity \t\t\t:: %s" % (str(city.encode("utf-8")))
+			print "\tISP \t\t\t:: %s" % (str(isp.encode("utf-8")))
+			print "\tOrganization \t\t:: %s" % (str(org.encode("utf-8")))
 			print "\tLatitude \t\t:: %s" % (str(lat))
 			print "\tLongitude \t\t:: %s" % (str(lon))
-			print "\tQuery \t\t\t:: %s" % (str(query))
-			print "\tAssociation \t\t:: %s" % (str(ass))
-			print "\tRegion \t\t\t:: %s" % (str(region))
-			print "\tRegion Name \t\t:: %s" % (str(regionName))
-			print "\tTime Zone \t\t:: %s" % (str(timezone))
+			print "\tQuery \t\t\t:: %s" % (str(query.encode("utf-8")))
+			print "\tAssociation \t\t:: %s" % (str(ass.encode("utf-8")))
+			print "\tRegion \t\t\t:: %s" % (str(region.encode("utf-8")))
+			print "\tRegion Name \t\t:: %s" % (str(regionName.encode("utf-8")))
+			print "\tTime Zone \t\t:: %s" % (str(timezone.encode("utf-8")))
 			print "\n"
 				
 		except requests.exceptions.ConnectionError:
