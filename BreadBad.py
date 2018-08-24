@@ -91,7 +91,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		country = loads(get_geo)['country']
+		country = loads(get_geo)['country'].encode("utf-8")
 		
 		if country == '':
 			country = None
@@ -102,7 +102,7 @@ class geoip:
 		
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		city = loads(get_geo)['city']
+		city = loads(get_geo)['city'].encode("utf-8")
 		
 		if city == '':
 			city = None
@@ -113,7 +113,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		countryCode = loads(get_geo)['countryCode']
+		countryCode = loads(get_geo)['countryCode'].encode("utf-8")
 		
 		if countryCode == '':
 			countryCode = None
@@ -124,7 +124,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		isp = loads(get_geo)['isp']
+		isp = loads(get_geo)['isp'].encode("utf-8")
 		
 		if isp == '':
 			isp = None
@@ -135,7 +135,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		org = loads(get_geo)['org']
+		org = loads(get_geo)['org'].encode("utf-8")
 		
 		if org == '':
 			org = None
@@ -168,7 +168,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		query = loads(get_geo)['query']
+		query = loads(get_geo)['query'].encode("utf-8")
 		
 		if query == '':
 			query = None
@@ -179,7 +179,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		ass = loads(get_geo)['as']
+		ass = loads(get_geo)['as'].encode("utf-8")
 		
 		if ass == '':
 			ass = None
@@ -190,7 +190,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		region = loads(get_geo)['region']
+		region = loads(get_geo)['region'].encode("utf-8")
 		
 		if region == '':
 			region = None
@@ -201,7 +201,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		regionName = loads(get_geo)['regionName']
+		regionName = loads(get_geo)['regionName'].encode("utf-8")
 		
 		if regionName == '':
 			regionName = None
@@ -212,7 +212,7 @@ class geoip:
 	
 		get_geo = requests.get("http://ip-api.com/json/"+self.ipaddr).text
 		
-		timezone = loads(get_geo)['timezone']
+		timezone = loads(get_geo)['timezone'].encode("utf-8")
 		
 		if timezone == '':
 			timezone = None
