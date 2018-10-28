@@ -61,6 +61,7 @@ Geolocation to you:
 ### Para geolocalizar una ip se dispone del siguiente comando de BreadBad:
 
 [BreadBad] > ipadress example.com
+
 [BreadBad] > all_information
 
 
