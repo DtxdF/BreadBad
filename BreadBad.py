@@ -56,6 +56,7 @@ print """
 	region_name \t::\t See the name belonging to the defined ip
 	TimeZone \t::\t See the time zone of the defined ip
 	Google_Maps \t::\t Show the link of google maps
+	zipCode \t::\t Show the zip code
 	all_information ::\t Show the all information from the ip address
 """
 		
@@ -153,6 +154,8 @@ while True:
 				print color.ble+"\tTime Zone: %s" % color.green+str(iptolocate.timezone())+color.reset
 			elif debug.split()[0].lower() == 'google_maps':
 				print color.ble+"\tGoogle maps: %s" % color.green+str(iptolocate.google_maps())+color.reset
+			elif debug.split()[0].lower() == 'zipcode':
+				print color.ble+"\tZip Code: %s" % color.green+str(iptolocate.zipCode())+color.reset
 			elif debug.split()[0].lower() == 'all_information':
 				welcome = "\nGeolocation to %s:" % (str(ipadress))
 				for i in range(int(len(welcome))-1):
