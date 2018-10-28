@@ -65,7 +65,6 @@ Geolocation to you:
 
 
 Geolocation to example.com:
-###########################
 
 
 
