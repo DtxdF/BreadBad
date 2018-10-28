@@ -158,8 +158,10 @@ while True:
 				print color.ble+"\tZip Code: %s" % color.green+str(iptolocate.zipCode())+color.reset
 			elif debug.split()[0].lower() == 'all_information':
 				welcome = "\nGeolocation to %s:" % (str(ipadress))
+				print welcome
+				welcome_char = ""
 				for i in range(int(len(welcome))-1):
-					welcome_char = "#"
+					welcome_char += "#"
 				print welcome_char+"\n"
 							
 				ass = iptolocate.association()
