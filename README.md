@@ -1,6 +1,6 @@
 # BreadBad
 
-* Es un geolocalizador de direcciones ip's para buscar no solo la ubicación, también información importante como: País, Código del país, Ciudad, ISP, Organización, Latitud, Longitud, Asociación, Región, Nombre de la región, Zona horaria 
+* Es un geolocalizador de direcciones ip's para buscar no solo la ubicación, también información importante como: País, Código del país, Ciudad, ISP, Organización, Latitud, Longitud, Asociación, Región, Nombre de la región, Zona horaria, Google maps
 * Ademas de geolocalizar una ip tambien geolocaliza los dominios como ejemplo: example.com
 * Se mostrara la informacion de tu ip al ejecutar BreadBad
 
@@ -32,6 +32,9 @@ Help Main:
         region          ::       See the region of the defined ip
         region_name     ::       See the name belonging to the defined ip
         TimeZone        ::       See the time zone of the defined ip
+        Google_Maps     ::       Show the link of google maps
+        zipCode         ::       Show the zip code
+        all_information ::       Show the all information from the ip address
 
 
 Geolocation to you:
@@ -48,6 +51,9 @@ Geolocation to you:
         Region                  :: -
         Region Name             :: -
         Time Zone               :: -
+        Time Zone               :: -
+        Zip Code                :: -
+        Google maps             :: -
 
 
 [BreadBad] >
@@ -55,6 +61,12 @@ Geolocation to you:
 ### Para geolocalizar una ip se dispone del siguiente comando de BreadBad:
 
 [BreadBad] > ipadress example.com
+[BreadBad] > all_information
+
+
+Geolocation to example.com:
+###########################
+
 
 
         Country(US)             :: United States
@@ -68,6 +80,8 @@ Geolocation to you:
         Region                  :: MA
         Region Name             :: Massachusetts
         Time Zone               :: America/New_York
+        Zip Code                :: 02061
+        Google maps             :: https://www.google.com/maps/place/42.1508,-70.8228/@42.1508,-70.8228,16z
 
 
 [BreadBad] >
