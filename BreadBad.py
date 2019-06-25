@@ -1,5 +1,5 @@
 # Created by: DtxdF
-# Version: 1.1
+# Version: 1.2
 # -*- coding: utf-8 -*-
 
 import os
