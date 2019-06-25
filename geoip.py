@@ -1,10 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-import urllib
-from json import loads
-
-def function_notdefined():
-	raise ValueError("Error, the values is not defined.")
+from requests import get
 	
 class statusip(Exception): pass
 
@@ -12,11 +8,13 @@ class geolocation:
 	def __init__(self, ip):
 		self.ip = ip
 		self.init = False
+        def function_notdefined(self):
+            raise ValueError('Error, the values is not defined')
 	def start(self):
 		if not self.ip == 'localme':
-			self.api_data = loads(urllib.urlopen("http://ip-api.com/json/"+self.ip).read())
+			self.api_data = get("http://ip-api.com/json/"+self.ip).json()
 		else:
-			self.api_data = loads(urllib.urlopen("http://ip-api.com/json").read())
+			self.api_data = get("http://ip-api.com/json").json()
 		if self.api_data['status'] == 'fail':
 			raise statusip("Error, This IP Addr is invalid.")
 		self.init = True
